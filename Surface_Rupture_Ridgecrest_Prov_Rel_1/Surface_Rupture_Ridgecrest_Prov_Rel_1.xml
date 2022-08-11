@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Ponti, Daniel J.</origin>
+        <origin>Blair, J. Luke</origin>
+        <origin>Akciz, Sinan</origin>
+        <origin>Bacon, Steven</origin>
+        <origin>Bennett, Scott</origin>
+        <origin>Bork, Stephen</origin>
+        <origin>Brooks, Benjamin</origin>
+        <origin>Bullard, Thomas</origin>
+        <origin>Dawson, Timothy</origin>
+        <origin>DuRoss, Christopher</origin>
+        <origin>Frost, Erik</origin>
+        <origin>Gold, Ryan</origin>
+        <origin>Graehl, Nicholas</origin>
+        <origin>Gutierrez, Carlos</origin>
+        <origin>Haddon, Elizabeth</origin>
+        <origin>Hernandez, Janis</origin>
+        <origin>Koehler, Richard</origin>
+        <origin>Kozaci, Ozgur</origin>
+        <origin>Leeper, Robert</origin>
+        <origin>McPhillips, Devin</origin>
+        <origin>Morelan, Alexander</origin>
+        <origin>Olson, Brian</origin>
+        <origin>Philibosian, Belle</origin>
+        <origin>Pickering, Alexandra J.</origin>
+        <origin>Pierce, Ian</origin>
+        <origin>Scharer, Katherine</origin>
+        <origin>Treiman, Jerome</origin>
+        <origin>Vanderwal, Josh</origin>
+        <origin>Williams, Alana</origin>
+        <pubdate>20200714</pubdate>
+        <title>Shapefile of Fault Rupture and Ground Deformation Features Produced by the Ridgecrest M6.4 and M7.1 Earthquake Sequence of July 4 and 5, 2019: Provisional Release 1</title>
+        <geoform>Vector Digital Data Set (Polyline)</geoform>
+        <pubinfo>
+          <pubplace>Moffett Field, CA</pubplace>
+          <publish>U.S. Geological Survey</publish>
+        </pubinfo>
+        <onlink>https://doi.org/10.5066/P9BZ5IJ9</onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin>Ponti, Daniel J.</origin>
+            <origin>Blair, J. Luke</origin>
+            <origin>Rosa, Carla M.</origin>
+            <origin>Thomas, Kate</origin>
+            <origin>Pickering, Alexandra J.</origin>
+            <origin>Akciz, Sinan</origin>
+            <origin>Angster, Stephen</origin>
+            <origin>Avouac, Jean-Philipe</origin>
+            <origin>Bachhuber, Jeffrey</origin>
+            <origin>Bacon, Steven</origin>
+            <origin>Barth, Nicolas</origin>
+            <origin>Bennett, Scott</origin>
+            <origin>Blake, Kelly</origin>
+            <origin>Bork, Stephan</origin>
+            <origin>Brooks, Benjamin</origin>
+            <origin>Bullard, Thomas</origin>
+            <origin>Burgess, Paul</origin>
+            <origin>Chupik, Colin</origin>
+            <origin>Dawson, Timothy</origin>
+            <origin>DeFrisco, Michael</origin>
+            <origin>Delano, Jaime</origin>
+            <origin>DeLong, Stephen</origin>
+            <origin>Dolan, James</origin>
+            <origin>Donnellan, Andrea</origin>
+            <origin>DuRoss, Christopher</origin>
+            <origin>Ericksen, Todd</origin>
+            <origin>Frost, Erik</origin>
+            <origin>Funning, Gareth</origin>
+            <origin>Gold, Ryan</origin>
+            <origin>Graehl, Nicholas</origin>
+            <origin>Gutierrez, Carlos</origin>
+            <origin>Haddon, Elizabeth</origin>
+            <origin>Hatem, Alexandra</origin>
+            <origin>Helms, John</origin>
+            <origin>Hernandez, Janis</origin>
+            <origin>Hitchcock, Christopher</origin>
+            <origin>Holland, Peter</origin>
+            <origin>Hudnut, Kenneth</origin>
+            <origin>Kendrick, Katherine</origin>
+            <origin>Koehler, Richard</origin>
+            <origin>Kozaci, Ozgur</origin>
+            <origin>Ladinsky, Tyler</origin>
+            <origin>Leeper, Robert</origin>
+            <origin>Madugo, Christopher</origin>
+            <origin>Mareschal, Maxime</origin>
+            <origin>McDonald, James</origin>
+            <origin>McPhillips, Devin</origin>
+            <origin>Milliner, Christopher</origin>
+            <origin>Mongovin, Daniel</origin>
+            <origin>Morelan, Alexander</origin>
+            <origin>Nale, Stephanie</origin>
+            <origin>Nevitt, Johanna</origin>
+            <origin>O'Neal, Matt</origin>
+            <origin>Olson, Brian</origin>
+            <origin>Oskin, Michael</origin>
+            <origin>Padilla, Salena</origin>
+            <origin>Patton, Jason</origin>
+            <origin>Philibosian, Belle</origin>
+            <origin>Pierce, Ian</origin>
+            <origin>Pridmore, Cynthia</origin>
+            <origin>Roth, Nathaniel</origin>
+            <origin>Sandwell, David</origin>
+            <origin>Scharer, Katherine</origin>
+            <origin>Seitz, Gordon</origin>
+            <origin>Singleton, Drake</origin>
+            <origin>Smith-Konter, Bridget</origin>
+            <origin>Spangler, Eleanor</origin>
+            <origin>Swanson, Brian</origin>
+            <origin>Thompson Jobe, Jessica</origin>
+            <origin>Treiman, Jerome</origin>
+            <origin>Valencia, Francesca</origin>
+            <origin>Vanderwal, Joshua</origin>
+            <origin>Williams, Alana</origin>
+            <origin>Xu, Xiaohua</origin>
+            <origin>Zachariasen, Judith</origin>
+            <origin>Zimmerman, Jade</origin>
+            <origin>Zinke, Robert</origin>
+            <pubdate>2020</pubdate>
+            <title>Documentation of surface fault rupture and ground-deformation features produced by the 4 and 5 July 2019 Mw 6.4 and Mw 7.1 Ridgecrest earthquake sequence</title>
+            <geoform>Publication (Journal)</geoform>
+            <pubinfo>
+              <pubplace>Albany, CA</pubplace>
+              <publish>Seismological Research Letters</publish>
+            </pubinfo>
+            <onlink>https://doi.org/10.1785/0220190322</onlink>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This item contains linework that represents fault rupture and ground deformation features interpreted from field-based maps and observations, as well as airborne imagery, lidar, and geodetic imagery products.  Provisional maps of 
+fault rupture and ground deformation are composed of a “mashup” of linework from these various sources, obtained and compiled as of December, 2019. If more than one linework representation exists for a segment of the fault rupture, linework showing the most rupture detail or best location accuracy, based on the judgment of the compiler, is preserved. On provisional maps, less than 25% of the linework is derived from high-resolution optical imagery and detailed field mapping. Because line segments from the various sources 
+vary in location accuracy and precision based on the source equipment or imagery, mismatches can occur at the boundaries between linework from different sources. No corrections are made for these mismatches in the provisional maps. 
+Final maps will reconcile all linework to a single registered base map</abstract>
+      <purpose>This data product was produced in order to document and synthesize surface faulting and ground deformation features produced by the Mw 6.4 and Mw 7.1 Ridgecrest earthquake sequence of July 4 and 5, 2019. Maps of fault rupture provide insights into cross-fault interactions and how faults may, or may not, be linked. Maps detailing rupture complexity and the association of coseismic rupture with existing tectonic geomorphology provide important insights into long-term fault activity and for refining fault hazard zones. Reconnaissance teams also identified and documented localized slip on both previously mapped and unmapped faults, further highlighting other potentially active fault zones within the region. In addition to surface faulting, both earthquakes produced shaking-related ground deformation associated with liquefaction and slope failure; these features are also documented in this product.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>20190704</begdate>
+          <enddate>20191219</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>ground condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>Irregular</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-117.784031723</westbc>
+        <eastbc>-117.312835696</eastbc>
+        <northbc>35.9385750705</northbc>
+        <southbc>35.4694304341</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>USGS Thesaurus</themekt>
+        <themekey>earthquake occurrences</themekey>
+        <themekey>tectonic processes</themekey>
+        <themekey>geolocation measurement</themekey>
+        <themekey>hazards</themekey>
+        <themekey>seismology</themekey>
+        <themekey>tectonic processes</themekey>
+        <themekey>field inventory and monitoring</themekey>
+        <themekey>maps and atlases</themekey>
+        <themekey>faulting (geologic)</themekey>
+      </theme>
+      <theme>
+        <themekt>USGS Metadata Identifier</themekt>
+        <themekey>USGS:5ef132f282ced62aaae18faa</themekey>
+      </theme>
+      <place>
+        <placekt>Common geographic areas</placekt>
+        <placekey>California</placekey>
+        <placekey>Ridgecrest</placekey>
+        <placekey>Kern County</placekey>
+        <placekey>China Lake</placekey>
+        <placekey>Searles Valley</placekey>
+        <placekey>Indian Wells Valley</placekey>
+        <placekey>Inyo County</placekey>
+        <placekey>San Bernardino County</placekey>
+      </place>
+    </keywords>
+    <accconst>None. Please see 'Distribution Info' for details.</accconst>
+    <useconst>none</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Daniel J Ponti</cntper>
+          <cntorg>U.S. GEOLOGICAL SURVEY, PACIFIC REGION: EARTHQUAKE SCIENCE CENTER</cntorg>
+        </cntperp>
+        <cntpos>Scientist Emeritus</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>350 North Akron Road</address>
+          <city>Moffett Field</city>
+          <state>CA</state>
+          <postal>94035</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>650-439-2679</cntvoice>
+        <cntemail>dponti@usgs.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <native>Environment as of Metadata Creation: Microsoft [Unknown] Version 6.2 (Build 9200) ; Esri ArcGIS 10.7.1 (Build 11595) Service Pack N/A (Build N/A)</native>
+    <crossref>
+      <citeinfo>
+        <origin>Donnellan, A</origin>
+        <origin>Lyzenga, G</origin>
+        <origin>Wang, J</origin>
+        <origin>Pierce, M</origin>
+        <origin>Goulet, C</origin>
+        <pubdate>20190802</pubdate>
+        <title>High-resolution targeted 3D imaging postseismic products of the Ridgecrest M6.4 and M7.1 earthquake sequence</title>
+        <pubinfo>
+          <pubplace>Bloomington, Indiana</pubplace>
+          <publish>Indiana University</publish>
+        </pubinfo>
+        <onlink>https://doi.org/10.5967/5sq2-rs60</onlink>
+      </citeinfo>
+    </crossref>
+    <crossref>
+      <citeinfo>
+        <origin>Milliner, C</origin>
+        <origin>Donnellan, A</origin>
+        <pubdate>20200122</pubdate>
+        <title>Using Planet Labs satellite imagery to separate the surface deformation between the July 4th Mw 6.4 Foreshock and July 5th Mw 7.1 mainshock during the 2019 Ridgecrest earthquake sequence</title>
+        <pubinfo>
+          <pubplace>Albany, CA</pubplace>
+          <publish>Seismological Research Letters</publish>
+        </pubinfo>
+        <onlink>https://pubs.geoscienceworld.org/ssa/srl/article/91/4/1986/580483/Using-Daily-Observations-from-Planet-Labs</onlink>
+      </citeinfo>
+    </crossref>
+    <crossref>
+      <citeinfo>
+        <origin>Xu, X</origin>
+        <origin>Sandwell, D.T.</origin>
+        <origin>Smith-Konter, B.</origin>
+        <pubdate>2020</pubdate>
+        <title>Coseismic displacements and surface fractures from Sentinel-1 InSAR: 2019 Ridgecrest earthquakes</title>
+        <pubinfo>
+          <pubplace>Albany, CA</pubplace>
+          <publish>Seismological Research Letters</publish>
+        </pubinfo>
+        <onlink>https://doi.org/10.1785/0220190275</onlink>
+      </citeinfo>
+    </crossref>
+    <crossref>
+      <citeinfo>
+        <origin>Pierce, Ian</origin>
+        <origin>Williams, Alana</origin>
+        <origin>Koehler, Richard D.</origin>
+        <origin>Chupik, Colin</origin>
+        <pubdate>2020</pubdate>
+        <title>High‐resolution structure‐from‐motion models and orthophotos of the southern sections of the 2019 Mw 7.1 and 6.4 Ridgecrest earthquakes surface ruptures</title>
+        <pubinfo>
+          <pubplace>Albany, CA</pubplace>
+          <publish>Seismological Research Letters</publish>
+        </pubinfo>
+        <onlink>https://doi.org/10.1785/0220190289</onlink>
+      </citeinfo>
+    </crossref>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>No formal attribute accuracy tests were conducted.</attraccr>
+    </attracc>
+    <logic>No formal logical accuracy tests were conducted.</logic>
+    <complete>Data set is considered complete for the information presented, as described in the abstract. Users are advised to read the rest of the metadata record carefully for additional details.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>No formal horizontal positional accuracy tests were conducted. See Ponti and others, 2020 (larger work citation) for discussion of horizontal location uncertainties.</horizpar>
+      </horizpa>
+      <vertacc>
+        <vertaccr>A formal accuracy assessment of the vertical positional information in the data set has either not been conducted, or is not applicable.</vertaccr>
+      </vertacc>
+    </posacc>
+    <lineage>
+      <procstep>
+        <procdesc>Portions of fault rupture and deformation features were mapped directly in the field, but most features were not completely documented on the ground. Development of comprehensive rupture and ground deformation maps therefore requires that we integrate the field-based maps with field observations and rupture interpretations derived from post earthquake airborne imagery, lidar, and geodetic imagery products.  Data from many sources were used to construct rupture maps. These include fault rupture and ground deformation linework provided directly to us from field teams, and linework compiled by 1) inferring the occurrence and strike of rupture from site observations and waypoints, 2) identifying mappable evidence of rupture on post-earthquake optical imagery from satellite, aircraft, and UAV platforms, 3) interpreting the presence of rupture from lineaments observed on shaded relief images derived from post-earthquake digital surface models, and 4) interpreting the presence of rupture from geodetic imaging products (InSAR and optical pixel correlation images). As digitized in GIS software, these different approaches each represent fault rupture and ground deformation features at notably different levels of detail and location precision. Provisional rupture map releases do not reconcile location mismatches across features in which their locations derive from these various sources.</procdesc>
+        <procdate>2020</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <indspref>China Lake, Ridgecrest, California</indspref>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>String</sdtstype>
+        <ptvctcnt>17792</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>0.01976646</latres>
+        <longres>0.0242250982</longres>
+        <geogunit>Decimal seconds</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>D_WGS_1984</horizdn>
+        <ellips>WGS_1984</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257223563</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>Attribute Table</enttypl>
+        <enttypd>Table containing attribute information associated with the data set.</enttypd>
+        <enttypds>Producer defined</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>FID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Class</attrlabl>
+        <attrdef>Class is short for Classification.  An enumerated value that identifies the primary source for the rupture linework.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Field</edomv>
+            <edomvd>Linework that is produced by direct mapping in the field.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Imagery</edomv>
+            <edomvd>Linework produced by visual identification of rupture from post-earthquake georeferenced orthoimagery or from imagery or lidar derived digital surface models. Linework detail is dependent on the compilation scale and resolution of the base imagery.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Inferred</edomv>
+            <edomvd>Linework produced during compilation phase by inferring occurrence and strike of rupture from observations and waypoints; used in areas where deformation is known from ground observations but where no mapping was done in the field and where deformation is not visible on imagery or remote sensing products. Shows strike of faulting only; does not preserve rupture continuity and may not include entire length of rupture along strike.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Remote Sensing</edomv>
+            <edomvd>Linework derived from pre-and post-earthquake satellite-based radar and optical imagery using radar interferometry or optical image correlation methodologies. Useful in areas where displacements are too small to be visible in optical images. Fine-scale rupture details are not represented.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Subclass</attrlabl>
+        <attrdef>An attribute that provides additional documentation to the Classification value.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <udom>For Field, this attribute describes the field mapping technique (e.g. GPS/GNSS track, waypoint connection, etc.). For Imagery and Remote Sensing, this attribute identifies the specific image file, image resolution, and compilation scale (if reported) for the interpreted linework.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Provider</attrlabl>
+        <attrdef>The first initial, last name and affiliation of the field mapper(s) or compiler who produced the linework.  Full names are listed in the citation section of this metadata record.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <udom>First initial, last name and affiliation of data provider</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Verified</attrlabl>
+        <attrdef>Verified is short for Verification.  An enumerated value that provides a qualitative evaluation of how well the line segment represents the extent and overall strike of the fault rupture or deformation feature in the field.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Partial</edomv>
+            <edomvd>One or several site observations exist on the strike of the feature, but there is low confidence as to the overall extent and continuity of the rupture segment or where, based on observations, the fault rupture occurs over broad areas.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Yes</edomv>
+            <edomvd>Rupture was directly mapped in the field, is clearly visible in post earthquake optical imagery, or where multiple observations of fault rupture or deformation occur along the strike of a feature such that its continuity and extent as mapped are well-constrained.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Date</attrlabl>
+        <attrdef>The date the rupture was mapped in the field, or if from imagery the date the image was acquired. For remote sensing products that use image pairs, this is the date of the most recent (post-earthquake) image used. Inferred line segments do not have a date assigned.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>2019-07-04</rdommin>
+            <rdommax>2019-12-19</rdommax>
+            <attrunit>Days</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Source</attrlabl>
+        <attrdef>An enumerated value that identifies the inferred earthquake source that produced the mapped rupture, based on location, displacement sense, and field observations.  Ruptures symbolized by this attribute are shown in Fig. 1 of the report.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Mw 6.4</edomv>
+            <edomvd>Rupture likely produced by the Mw 6.4 earthquake of July 4, 2019.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Mw 7.1</edomv>
+            <edomvd>Rupture likely produced by the Mw 7.1 earthquake of July 5, 2019.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Uncertain</edomv>
+            <edomvd>Ruptures that are not readily attributable to either of the M6.4 or M7.1 events. These are small displacement NE-SW striking zones of fractures located some distance from, but approximately parallel to, the main M6.4 rupture zone.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Origin</attrlabl>
+        <attrdef>An enumerated value describing the inferred cause of the mapped feature, based on ground observations and other factors such as rupture continuity and surface expression.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Shaking</edomv>
+            <edomvd>Inferred to have been produced solely by shaking-induced shallow slope failures and lateral spreads. Linear fractures represent head scarps of lateral spreads and landslides; closed lines bound regions of small-scale slumps, settlements, rock falls, and bank failures.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Tectonic</edomv>
+            <edomvd>Zone of deformation having strike and displacements consistent with the earthquake source mechanism. Sense of offset may be observed directly or inferred from patterns of en echelon surface fractures. Tectonic surface rupture includes both seismogenic rupture that has propagated to the surface from the earthquake source, and slip resulting from shallow strain release triggered by shaking or changes in near-surface stresses from the earthquakes.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Uncertain</edomv>
+            <edomvd>Linear rupture segments where the feature strike and displacement could be attributable to either faulting or lateral spreading. This value is also used where the orientation and displacements measured in the field appear not to be consistent with the earthquake source mechanisms nor can the feature be readily attributable to typical earthquake-induced ground failure mechanisms such as liquefaction or shallow slope failure.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>ProvNote</attrlabl>
+        <attrdef>Notes or comments from the provider of the linework.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <udom>A textual description of the data collected and/or collection method as reported by the provider.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>shape_leng</attrlabl>
+        <attrdef>The length, in radians, of each polyline segment.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>0.020964032765756</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Citation</attrlabl>
+        <attrdef>Author(s),date and DOI of the publication</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <udom>A textual description of the author(s), date and DOI of the publication if linework is published elsewhere.</udom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>U.S. Geological Survey – ScienceBase</cntper>
+          <cntorg>U.S. Geological Survey – ScienceBase</cntorg>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>Denver Federal Center, Building 810, Mail Stop 302</address>
+          <city>Denver</city>
+          <state>CO</state>
+          <postal>80225</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>1-888-275-8747</cntvoice>
+        <cntemail>sciencebase@usgs.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>Distributor assumes no liability for misuse of data.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>SHP, Vector Digital Data Set (Polyline)</formname>
+          <formvern>ArcGIS 10.x</formvern>
+          <formspec>ESRI Polyline Shapefile</formspec>
+          <formcont>ZIP contains files multiple files that make up a shapefile including; Main File (. SHP) is a mandatory Esri file that gives features their geometry, Index File (. SHX), dBASE File (. DBF), Projection File (. PRJ), Extensible Markup Language File (. XML), Spatial Index File (. SBN), Spatial Index File (. SBX), Code Page File (. CPG)</formcont>
+          <transize>3.0</transize>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>https://www.sciencebase.gov/catalogMaps/mapping/ows/5ef132f282ced62aaae18faa?service=wfs&amp;request=getcapabilities&amp;version=1.0.0</networkr>
+              </networka>
+            </computer>
+          </onlinopt>
+        </digtopt>
+      </digform>
+      <fees>None</fees>
+    </stdorder>
+    <techpreq>This zip file contains data available in ESRI shapefile format. The user must have software capable of uncompressing the WinZip file and displaying the shapefile. In lieu of ArcView or ArcGIS, the user may utilize another GIS application package capable of importing the data. A free data viewer, ArcExplorer, capable of displaying the data is available from ESRI at www.esri.com')</techpreq>
+  </distinfo>
+  <metainfo>
+    <metd>20200818</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>James Luke Blair</cntper>
+          <cntorg>U.S. Geological Survey, SOUTHWEST REGION</cntorg>
+        </cntperp>
+        <cntpos>Geologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>350 North Akron Road</address>
+          <city>Moffett Field</city>
+          <state>CA</state>
+          <postal>94035</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>650-439-2707</cntvoice>
+        <cntemail>lblair@usgs.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>
