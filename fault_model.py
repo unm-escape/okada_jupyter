@@ -118,14 +118,41 @@ class FaultModel:
         #compute coordinates of every patch center and add this patch
         patchL=L/nL
         patchW=W/nW  
+        sindip=np.sin(np.radians(dip))
+        cosdip=np.cos(np.radians(dip))
+        sinstr=np.sin(np.radians(strike))
+        cosstr=np.cos(np.radians(strike))
         for i in range(nL):
             for j in range(nW):
-                tot_eoffset=(i+0.5)*patchL*np.sin(np.radians(strike))+(j+0.5)*patchW*np.cos(np.radians(dip))*np.cos(np.radians(strike))
-                tot_noffset=(i+0.5)*patchL*np.cos(np.radians(strike))-(j+0.5)*patchW*np.cos(np.radians(dip))*np.sin(np.radians(strike))
-                tot_uoffset=(j+0.5)*patchW*np.sin(np.radians(dip))                
+                tot_eoffset=(i+0.5)*patchL*sinstr+(j+0.5)*patchW*cosdip*cosstr
+                tot_noffset=(i+0.5)*patchL*cosstr-(j+0.5)*patchW*cosdip*sinstr
+                tot_uoffset=(j+0.5)*patchW*sindip                
                 
                 #get next patch-centered coordinate
                 latcij,loncij,depthcij = geod_transform.translate_flat(latcorner,loncorner,depthcorner,tot_eoffset,tot_noffset,tot_uoffset)
+                self.add_patch(latcij,loncij,depthcij,strike,dip,patchL,patchW,i,j)
+                
+    # specify the center of the fault instead of the top-left corner            
+    def create_planar_model_centered(self,latc,lonc,depthc,strike,dip,L,W,nL,nW):
+        #compute coordinates of every patch center and add this patch
+        patchL=L/nL
+        patchW=W/nW  
+        sindip=np.sin(dip*np.pi/180.)
+        cosdip=np.cos(dip*np.pi/180.)
+        sinstr=np.sin(strike*np.pi/180.)
+        cosstr=np.cos(strike*np.pi/180.)
+        # simplest way: first, compute offset to the top-left corner, then compute individual offsets relative to that
+        fault_eoffset = -0.5*L*sinstr - 0.5*W*cosdip*cosstr
+        fault_noffset = -0.5*L*cosstr + 0.5*W*cosdip*sinstr
+        fault_uoffset = -0.5*W*sindip
+        for i in range(nL):
+            for j in range(nW):
+                tot_eoffset = fault_eoffset + (i+0.5)*patchL*sinstr + (j+0.5)*patchW*cosdip*cosstr
+                tot_noffset = fault_noffset + (i+0.5)*patchL*cosstr - (j+0.5)*patchW*cosdip*sinstr
+                tot_uoffset = fault_uoffset + (j+0.5)*patchW*sindip           
+                
+                #get next patch-centered coordinate
+                latcij,loncij,depthcij = geod_transform.translate_flat(latc,lonc,depthc,tot_eoffset,tot_noffset,tot_uoffset)
                 self.add_patch(latcij,loncij,depthcij,strike,dip,patchL,patchW,i,j)
                 
     def find_patch(self,patchid,strikeoffset,dipoffset):
@@ -161,6 +188,15 @@ class FaultModel:
             print("didn't understand 'kind' argument for get_greens:", kind, " exiting.")
             sys.exit(1)
         return G
+
+    def get_selfstress(self,mu=30e3):
+        # NOTE: THIS IS INCORRECT for actual stress computations. The current Okada greens function does not accept depths for the receiver faults.
+        # Need to replace okada85 by okada92 computations.
+        # But, this may work OK for a simple smoothing matrix, for a shallowly dipping fault.
+        # return the stress interaction kernel for the fault.
+        # this is the strain greens function for slip on each patch, computed at each patch center
+        K = okada_greens.strain_greens(self.latc,self.lonc,self.latc,self.lonc,self.depth,self.strike,self.dip,self.L,self.W)    
+        return mu*K
 
     def load_pickle(self,fname):
         #get pickled arrays
@@ -198,7 +234,7 @@ class FaultModel:
     def get_patch_verts_center_both(self):
         verts3d=[]
         verts2d=[]
-        print(self.latc)
+        #print(self.latc)
         for i in range(len(self.latc)):
             sindip=np.sin(np.radians(self.dip[i]))
             cosdip=np.cos(np.radians(self.dip[i]))

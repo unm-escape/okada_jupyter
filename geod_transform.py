@@ -19,8 +19,8 @@ def geod2ecef(lat, lon, alt):
     """ (list,list,list) -> list,list,list
         Convert geodetic (lat,lon,alt) in degrees/meters to ECEF (X,Y,Z) in meters.
         translated from ~/gg/gamit/lib/geoxyz.f"""
-    latr = np.radians(lat)
-    lonr = np.radians(lon)
+    latr = lat*np.pi/180.
+    lonr = lon*np.pi/180.
     sinlat=np.sin(latr)
     coslat=np.cos(latr)
     sinlon=np.sin(lonr)
@@ -84,8 +84,8 @@ def ecef2enu_vel(x,y,z,lat0,lon0):
     assert np.size(x)==np.size(y) and np.size(x)==np.size(z) and np.size(x)==np.size(lat0) and np.size(x)==np.size(lon0)
     #interweave vectors into one, size 3nx1
     xyz=np.ravel(np.column_stack((x,y,z)))
-    latr=np.array(np.radians(lat0),ndmin=1)
-    lonr=np.array(np.radians(lon0),ndmin=1)
+    latr=np.array(lat0*np.pi/180.,ndmin=1)
+    lonr=np.array(lon0*np.pi/180.,ndmin=1)
     sinlon0=np.sin(lonr)
     coslon0=np.cos(lonr)
     sinlat0=np.sin(latr)
@@ -139,8 +139,8 @@ def enu2ecef_sigma(esigma,nsigma,usigma,rhoen,lat0,lon0):
 
 def __Rmat_for_enu2ecef(lat,lon):
     '''internal function to create rotation matrix for enu2ecef routines'''
-    latr=np.array(np.radians(lat),ndmin=1)
-    lonr=np.array(np.radians(lon),ndmin=1)
+    latr=np.array(lat*np.pi/180.,ndmin=1)
+    lonr=np.array(lon*np.pi/180.,ndmin=1)
     sinlon=np.sin(lonr)
     coslon=np.cos(lonr)
     sinlat=np.sin(latr)
@@ -159,11 +159,11 @@ def __Rmat_for_enu2ecef(lat,lon):
 
 def geod2spher(lat):
     ''' convert geodetic latitude to spherical'''
-    return np.arctan((1-e2)*np.tan(np.radians(lat)))*180./np.pi
+    return np.arctan((1-e2)*np.tan(lat*np.pi/180.))*180./np.pi
 
 def spher2geod(lat):
     ''' convert spherical latitude to geodetic'''
-    return np.arctan(np.tan(np.radians(lat))/(1-e2))*180./np.pi
+    return np.arctan(np.tan(lat*np.pi/180.)/(1-e2))*180./np.pi
 
 def geod2enu(lat,lon,alt,lat0,lon0,alt0):
     """ (list,list,list,scalar,scalar,scalar) -> list,list,list
@@ -194,15 +194,15 @@ def vincenty(lat0,lon0,lat1,lon1):
     returns dist,az0,az1 (forward and back azimuths at the starting and ending points)
     vincenty's more accurate iterative formula for distances, azimuths on an ellipsoid
     http://en.wikipedia.org/wiki/Vincenty%27s_formulae """
-    lat0r=np.radians(lat0)
-    lat1r=np.radians(lat1)
+    lat0r=lat0*np.pi/180.
+    lat1r=lat1*np.pi/180.
     U0=np.arctan((1-f)*np.tan(lat0r))
     U1=np.arctan((1-f)*np.tan(lat1r))
     sinU0=np.sin(U0)
     cosU0=np.cos(U0)
     sinU1=np.sin(U1)
     cosU1=np.cos(U1)
-    L=np.radians(lon1-lon0)
+    L=(lon1-lon0)*np.pi/180.
     lam=L
     count=0
     while count<10:
@@ -231,11 +231,11 @@ def vincenty(lat0,lon0,lat1,lon1):
 
 def haversine(lat0,lon0,lat1,lon1):
     """get the great-circle distance between two points in lat,lon
-    note, uses spherical earth assumption"""
-    dlat=np.radians(lat1-lat0)
-    dlon=np.radians(lon1-lon0)
-    lat0r=np.radians(lat0)
-    lat1r=np.radians(lat1)
+    note, uses spherical earth .assumption"""
+    dlat=(lat1-lat0)*np.pi/180
+    dlon=(lon1-lon0)*np.pi/180.
+    lat0r=lat0*np.pi/180.
+    lat1r=lat1*np.pi/180.
     x=np.sin(dlat/2.)*np.sin(dlat/2.) + np.sin(dlon/2.)*np.sin(dlon/2.)*np.cos(lat0r)*np.cos(lat1r)
     c=2.*np.arctan2(np.sqrt(x),np.sqrt(1.-x))
     dist=6371000.*c
@@ -244,10 +244,10 @@ def haversine(lat0,lon0,lat1,lon1):
 def heading(lat0,lon0,lat1,lon1):
     """great-circle heading/azimuth between two points in lat,lon, relative to point0 (degrees assumed)
     note, uses spherical earth assumption"""
-    lat0r=np.radians(lat0)
-    lon0r=np.radians(lon0)
-    lat1r=np.radians(lat1)
-    lon1r=np.radians(lon1)
+    lat0r=lat0*np.pi/180.
+    lon0r=lon0*np.pi/180.
+    lat1r=lat1*np.pi/180.
+    lon1r=lon1*np.pi/180.
     headr=np.mod(np.arctan2(np.sin(lon1r-lon0r)*np.cos(lat1r),
            np.cos(lat0r)*np.sin(lat1r)-np.sin(lat0r)*np.cos(lat1r)*np.cos(lon1r-lon0r)),
            2.*np.pi)
@@ -257,13 +257,13 @@ def heading(lat0,lon0,lat1,lon1):
 def midpoint(lat0,lon0,lat1,lon1):
     """great-circle midpoint between two points on a sphere
     note, uses spherical earth assumption"""
-    dlon=np.radians(lon1-lon0)
-    lat0r=np.radians(lat0)
-    lat1r=np.radians(lat1)
+    dlon=(lon1-lon0)*np.pi/180.
+    lat0r=lat0*np.pi/180.
+    lat1r=lat1*np.pi/180.
     bx=np.cos(lat1r)*np.cos(dlon)
     by=np.cos(lat1r)*np.sin(dlon)
     latcr=np.arctan2(np.sin(lat0r)+np.sin(lat1r), np.sqrt((np.cos(lat0r) + bx)**2 + by**2))
-    loncr=np.radians(lon0) + np.arctan2(by, np.cos(lat0r)+bx)
+    loncr=lon0*np.pi/180. + np.arctan2(by, np.cos(lat0r)+bx)
     latc=np.degrees(latcr)
     lonc=np.degrees(loncr)
     return latc,lonc
